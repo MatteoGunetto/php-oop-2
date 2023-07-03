@@ -7,7 +7,7 @@ class Giochi extends Prodotti
     public $materiale;
 
     function __construct(
-        Categorie $_categoria,
+        categorie $categorie,
         string $_nome_prod,
         float $_prezzo,
         bool $_dispo,
@@ -15,14 +15,13 @@ class Giochi extends Prodotti
         string $_materiale
     ) {
         parent::__construct(
-            $_categoria,
+            $categorie,
             $_nome_prod,
             $_prezzo,
             $_dispo,
             $_img
         );
+
        $this->materiale=$_materiale;
-
     }
-
 }

@@ -1,12 +1,14 @@
 <?php
 require_once __DIR__ . './prodotti.php';
-require_once __DIR__ . './categorie.php';
+require_once __DIR__ . './Categorie.php';
+
 class Cucce extends Prodotti
 {
     public $materiale;
     public $forma;
+
     function __construct(
-        Categoria $_categoria,
+        Categorie $Categorie,
         string $_nome_prod,
         float $_prezzo,
         bool $_dispo,
@@ -15,12 +17,13 @@ class Cucce extends Prodotti
         int $_forma
     ) {
         parent::__construct(
-            $_categoria,
+            $Categorie,
             $_nome_prod,
             $_prezzo,
             $_dispo,
             $_img
         );
+
         $this->materiale = $_materiale;
         $this->forma = $_forma;
     }
