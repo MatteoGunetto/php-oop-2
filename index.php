@@ -8,6 +8,5 @@
         <title>Animal - PHP OOP 2</title>
     </head>
     <body>
-        <h2>prova stampa negozio animali</h2>
     </body>
 </html>
